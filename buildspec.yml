@@ -21,12 +21,11 @@ phases:
       - echo Build completed on `date`
 artifacts:
   files:
-      - '**/*'
-      base-directory: 'dist*'
-      discard-paths: yes
+      - 'dist*/**/*'
+      # base-directory: 'dist*'
       - 'appspec.yml'
       - 'scripts/install_dependencies.sh'
       - 'scripts/start_server.sh'
       - 'scripts/stop_server.sh'
       - 'scripts/basic_health_check.sh'
-  
+      discard-paths: yes
