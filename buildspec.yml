@@ -21,8 +21,6 @@ phases:
       - echo Build completed on `date`
 artifacts:
   files:
-      - 'target/dist*'
-      # base-directory: 'dist*'
       - 'appspec.yml'
       - 'scripts/install_dependencies.sh'
       - 'scripts/start_server.sh'
