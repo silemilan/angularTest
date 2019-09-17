@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: AngularAppTest
-    destination: //usr/share/tomcat9/webapps
+    destination: /var/tmp
 hooks:
   ApplicationStop:
     - location: scripts/stop_server
@@ -18,6 +18,6 @@ hooks:
     - location: scripts/start_server
       timeout: 300
       runas: root
-  #ValidateService:
-  #  - location: scripts/basic_health_check.sh
-  #    runas: root
+  ValidateService:
+    - location: scripts/basic_health_check.sh
+      runas: root
