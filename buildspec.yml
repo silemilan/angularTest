@@ -21,9 +21,9 @@ phases:
       - echo Build completed on `date`
 artifacts:
   files:
-      - 'appspec.yml'
-      - 'scripts/install_dependencies.sh'
-      - 'scripts/start_server.sh'
-      - 'scripts/stop_server.sh'
-      - 'scripts/basic_health_check.sh'
+    - 'appspec.yml'
+    - 'scripts/install_dependencies.sh'
+    - 'scripts/start_server.sh'
+    - 'scripts/stop_server.sh'
+    - 'scripts/basic_health_check.sh'
  
