@@ -28,4 +28,4 @@ artifacts:
       - 'scripts/start_server.sh'
       - 'scripts/stop_server.sh'
       - 'scripts/basic_health_check.sh'
-      discard-paths: yes
+ 
